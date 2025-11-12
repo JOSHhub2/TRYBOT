@@ -16,3 +16,17 @@
   <button class="stop" onclick="fetch('/stop').then(()=>location.reload())">Stop Bot</button>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Bot</title>
+</head>
+<body>
+    <h1>Upload your Python bot</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".py" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
