@@ -1,6 +1,7 @@
-my-bot-project/
-├─ app.py              <-- optional, kung ito ang main bot
-├─ index.html          <-- webpage para sa upload
-├─ start.sh            <-- auto-run script
+TRYBOT/
+├─ main.py                <-- default bot
+├─ start.sh               <-- auto-run script
 ├─ requirements.txt
-├─ uploaded_files/     <-- dito ilalagay ang uploaded scripts
+├─ uploaded/              <-- dito ilalagay ang uploaded scripts
+├─ templates/
+│   └─ index.html         <-- web panel with upload button
