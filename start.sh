@@ -1,14 +1,10 @@
 #!/bin/bash
 
-# Check if app.py exists
-if [ -f "app.py" ]; then
-    echo "Starting app.py..."
-    python3 app.py
-# Else check if bot.py exists
-elif [ -f "bot.py" ]; then
-    echo "Starting bot.py..."
-    python3 bot.py
+# If uploaded app.py exists, run it
+if [ -f "uploaded/app.py" ]; then
+    echo "Running uploaded app.py..."
+    python3 uploaded/app.py
 else
-    echo "No bot file found!"
-    exit 1
+    echo "No uploaded app.py, running default main.py"
+    python3 main.py
 fi
