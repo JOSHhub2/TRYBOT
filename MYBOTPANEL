@@ -1,0 +1,7 @@
+mybotpanel/
+├── main.py          ← Flask web server
+├── bot.py           ← Telegram bot script
+├── templates/
+│   └── index.html   ← web dashboard (buttons)
+├── requirements.txt
+└── Procfile
