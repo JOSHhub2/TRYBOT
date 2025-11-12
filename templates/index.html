@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bot Control Panel</title>
+  <style>
+    body { font-family: Arial; text-align: center; background: #0e0e0e; color: white; }
+    button { margin: 10px; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; }
+    .start { background: #28a745; color: white; }
+    .stop { background: #dc3545; color: white; }
+  </style>
+</head>
+<body>
+  <h1>🤖 Telegram Bot Hosting Panel</h1>
+  <h3>Status: {{ status }}</h3>
+  <button class="start" onclick="fetch('/start').then(()=>location.reload())">Start Bot</button>
+  <button class="stop" onclick="fetch('/stop').then(()=>location.reload())">Stop Bot</button>
+</body>
+</html>
